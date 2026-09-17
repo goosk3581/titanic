@@ -51,6 +51,9 @@ age_count = (
     df.groupby('연령대', as_index=False)['Age'].count()
 )
 
+
+st.subheader('연령대별 생존자수')
+
 st.dataframe(filtered)
 if gender == 'total':
     st.bar_chart(
