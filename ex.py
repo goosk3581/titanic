@@ -52,9 +52,11 @@ age_count = (
 )
 
 
-st.subheader('연령대별 생존자수')
+
 
 st.dataframe(filtered)
+
+st.subheader('연령대별 생존자수')
 if gender == 'total':
     st.bar_chart(
     age_count,
